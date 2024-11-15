@@ -1,0 +1,67 @@
+.website-container {
+    background-color: white;
+    overflow: hidden;
+}
+
+.website-item {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin-bottom: 30px;
+    animation: scroll-right 20s linear infinite;
+}
+
+.website-item:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.website-item-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 20px;
+    animation: scroll-left 20s linear infinite;
+}
+
+.website-item-2:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.website-grid:before,
+.website-container:after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    0%,
+    rgba(255, 255, 255, 0),
+    100%
+  );
+
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+}
+
+@keyframes scroll-right {
+    0% {
+        right: 100%;
+        transform: translateX(-100%);
+      }
+      100% {
+        right: -100%;
+        transform: translateX(0);
+      }
+}
+
+@keyframes scroll-left{
+    0% {
+        left: -100%;
+        transform: translateX(100%);
+      }
+    100% {
+        left: 100%;
+        transform: translateX(0);
+      }
+}

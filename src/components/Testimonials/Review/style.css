@@ -1,0 +1,39 @@
+.container {
+    background-color: white;
+    margin: 0px;
+    padding: 0;
+}
+
+.container p {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 37.8px;
+    text-align: left;
+    font-family: 'PP Neue Montreal', sans-serif;
+}
+
+.description {
+    margin: 28px 0px;
+}
+  
+  .description h2 {
+    font-family: 'PP Neue Montreal', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+  }
+  
+  .description p {
+    font-family: 'PP Neue Montreal', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+  
+  .reviewer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}

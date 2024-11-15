@@ -1,0 +1,95 @@
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    background-color: #c7d0d9;
+    overflow: hidden;
+    position: relative;
+}
+
+.picture {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.hero-desc {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    right: 50%;
+    font-family: 'PP Neue Montreal', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    color: #f4f7fa;
+    overflow: hidden;
+    transform: translateX(50%);
+    animation: move-rtl 10s linear infinite;
+}
+
+.interact {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    right: 0;
+    align-items: center;
+    transform: translateX(75%);
+    animation: hide 1000ms;
+    bottom: 50%;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.interact:hover {
+    transform: translateX(20%);
+    animation: peek 1000ms;
+}
+
+@keyframes hide {
+    from {
+      transform: translateX(20%);
+    }
+    to {
+      transform: translateX(75%);
+    }
+}
+
+@keyframes peek {
+    from {
+      transform: translateX(75%);
+    }
+    to {
+      transform: translateX(20%);
+    }
+  }
+
+@keyframes move-rtl {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
+}
+
+.interact button {
+    padding: 30px 120px;
+    border-radius: 60px;
+    background-color: #0b0c0e;
+    color: #ffffff;
+    overflow: hidden;
+    font-family: 'PP Neue Montreal', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.interact .icon {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    gap: 33px;
+    padding-left: 33px;
+}

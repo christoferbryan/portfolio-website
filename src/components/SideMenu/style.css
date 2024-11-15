@@ -1,0 +1,138 @@
+.menu-toggle- {
+    height: 100%;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    background-color: #0b0c0e;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: 2s all;
+}
+
+.menu-toggle-show {
+    height: 100%;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    background-color: #0b0c0e;
+    z-index: 999;
+    transform: translateX(0%);
+    transition: 2s all;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0px 80px;
+}
+
+.menu-toggle- nav {
+  position: absolute;
+  bottom: 0;
+}
+
+.menu-toggle- nav ul li {
+  color: #f4f7fa;
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+}
+
+.menu-toggle-show nav {
+  position: absolute;
+  bottom: 0;
+}
+
+.menu-toggle-show nav ul li {
+  color: #f4f7fa;
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+}
+
+.menu-list a {
+  text-decoration: none;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 72px;
+  font-family: 'PP Neue Montreal', sans-serif;
+  text-align: left;
+  color: #ffffff;
+}
+
+.menu-toggle-show button {
+  display: flex;
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  border-radius: 150px;
+  padding: 40px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.menu-toggle- button {
+  display: flex;
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  border-radius: 150px;
+  padding: 40px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.menu-toggle- button i {
+  font-size: 32px;
+}
+
+.menu-toggle-show button i {
+  font-size: 32px;
+}
+
+.menu-toggle-show button span {
+  position: relative;
+  z-index: 2;
+}
+
+.menu-toggle-show button:hover {
+  color: #0b0c0e;
+}
+
+.menu-toggle-show button::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 180px;
+  transition: all 0.5s;
+}
+
+.menu-toggle-show button:hover::after {
+  width: 100%;
+}

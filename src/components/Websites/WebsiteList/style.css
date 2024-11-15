@@ -1,0 +1,74 @@
+.container-website {
+    background-color: #c7d0d9;
+    padding: 56px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    perspective: 100px;
+    overflow: hidden;
+}
+
+.container-website-button {
+    position: absolute;
+    align-items: center;
+    display: none;
+    color: #0b0c0e;
+    transition: 3s all;
+}
+
+.container-website:hover .container-website-button {
+    display: block;
+    cursor: pointer;
+}
+
+.container-website:hover img {
+    transform: translateZ(20px);
+    transform: scale(1.1);
+    transition: 1s all;
+}
+
+.container-website-button button {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    text-align: left;
+    font-family: 'PP Neue Montreal', sans-serif;
+    padding: 12px 18px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    color: #0b0c0e;
+    transition: all 0.5s;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container--website-button i {
+    font-size: 20px;
+}
+
+.container-website-button button:hover {
+    background-color: #0b0c0e;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.container-website::before,
+.container-website::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    0%,
+    rgba(255, 255, 255, 0),
+    100%
+  );
+
+  content:'';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+}

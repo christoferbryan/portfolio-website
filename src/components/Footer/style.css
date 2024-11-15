@@ -1,0 +1,115 @@
+.footer-container {
+    background-color: #0b0c0e;
+    padding: 100px 60px 20px 60px;
+    align-items: center;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 140px;
+}
+
+.footer-item p {
+    font-family: 'PP Neue Montreal', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #c7d0d9;
+}
+
+.footer-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title h2 {
+    font-family: 'PP Neue Montreal', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72px;
+    text-align: left;
+}
+
+.footer-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-details img {
+    width: 25%;
+    height: 60%;
+}
+
+.footer-item-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 140px;
+    align-items: flex-end;
+}
+
+.footer-button button {
+    padding: 24px 48px;
+    border-radius: 170px;
+    font-family: 'PP Neue Montreal', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    text-align: left;
+    color: #0b0c0e;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer-item-2 nav {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0px;
+}
+
+nav ul {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+nav ul li {
+    color: white;
+}
+
+.footer-button button span {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-button button::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    border-radius: 180px;
+    transition: all 0.5s;
+  }
+  
+
+.footer-button button:hover {
+    color: white;
+}
+
+.footer-button button:hover::after {
+    width: 100%;
+}
